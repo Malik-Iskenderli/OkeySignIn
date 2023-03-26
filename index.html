@@ -1,470 +1,530 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>101 Kapak</title>
-    
+
 </head>
+
 <body>
-    
+
     <section class="containere">
+        <div class="container-fluid">
+            <div class="row">
 
-        <div class="left_box_signin">
-            <h1 class="texth1">Giris yap!</h1>
-                <!-- ------buttonlarim ve giris kismini bir araya toplayan alanim0-------- -->
-            <div class="flex_button_signin">
-            <!--------------------girisnen parola olan kisim------------->
-            <div class="signin-inputs">
-                <label for="name">
-                    <div class="icon-box user-icon-box">
-                        <i class="fa-solid fa-user"></i>
+                <div class=" col-lg-5 col-12 col-sm-12 col-md-6 left_box_signin">
+                    <h1 class="texth1">Giris yap!</h1>
+                    <!-- ------buttonlarim ve giris kismini bir araya toplayan alanim0-------- -->
+                    <div class="flex_button_signin">
+                        <!--------------------girisnen parola olan kisim------------->
+                        <div class="row">
+                            <div class="signin-inputs col-lg-6 col-12">
+                                <label for="name">
+                                    <div class="icon-box user-icon-box">
+                                        <i class="fa-solid fa-user"></i>
+                                    </div>
+                                    <input type="text" placeholder="Kullanici adi / Email" id="kuladi">
+                                </label>
+                                <label for="password">
+                                    <div class="icon-box password-icon-box">
+                                        <i class="fa-solid fa-lock"></i>
+                                    </div>
+                                    <input type="password" placeholder="Parola" id="sifre">
+                                </label>
+                                <span class="forget_password">
+                                    <a>Parolayi mi unuttun?</a>
+                                </span>
+                                <button class="giris hoverbtn">Giris yap</button>
+                                <button class="oda hoverbtn">Oda sec</button>
+                                <button class="misafir hoverbtn">Misafir</button>
+                                <button class="uye hoverbtn">Uye Ol</button>
+                            </div>
+
+                            <!-- ------buttonlarim isikli olan bolge----- -->
+                            <div class="reklam_alani col-lg-5 col-12">
+                                <p>Burada sizin reklaminiz ola bilirdi.....</p>
+                            </div>
+                        </div>
+
                     </div>
-                    <input type="text" placeholder="Kullanici adi / Email" id="kuladi">
-                </label>
-                <label for="password">
-                    <div class="icon-box password-icon-box">
-                        <i class="fa-solid fa-lock"></i>
+
+                    <div class="signin_sosial_platform">
+                        <div class="google_signin sosial">
+                            <i class="fa-brands fa-google"></i>
+                            <span>Google ile giris yap</span>
+                        </div>
+                        <div class="face_signin sosial">
+                            <i class="fa-brands fa-facebook"></i>
+                            <span>Facebook ile giris yap</span>
+                        </div>
                     </div>
-                    <input type="password" placeholder="Parola" id="sifre">
-                </label>
-                <span class="forget_password">
-                    <a>Parolayi mi unuttun?</a>
-                </span>
-                <button class="giris hoverbtn">Giris yap</button>
-                <button class="oda hoverbtn">Oda sec</button>
-                <button class="misafir hoverbtn">Misafir</button>
-                <button class="uye hoverbtn">Uye Ol</button>
-            </div>
-            
-                <!-- ------buttonlarim isikli olan bolge----- -->
-            <div class="reklam_alani">
-              <p>Burada sizin reklaminiz ola bilirdi.....</p>
-            </div>
-            </div>
 
-            <div class="signin_sosial_platform">
-                <div class="google_signin sosial">
-                    <i class="fa-brands fa-google"></i>
-                    <span>Google ile giris yap</span>
+
+
                 </div>
-                <div class="face_signin sosial">
-                    <i class="fa-brands fa-facebook"></i>
-                    <span>Facebook ile giris yap</span>
+
+                <div class=" col-lg-7 col-12 col-sm-12 col-md-6 right_box">
+
+                    <div class="row">
+                        <div class="buttons_top col-lg-12">
+                            <div class="button_left_top">
+                                <button class="btnn">Masaustune indir</button>
+                                <button class="btnn">Galeri</button>
+                            </div>
+                            <div class="button_right_top">
+                                <button class="btnn">Blog</button>
+                                <button class="btnn">Iletesim</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="games_play col-lg-12 col-12">
+
+                            <div class="game_box">
+                                <img src="./Images/biyikLogo.png" alt="foto">
+                                <button class="btn_play">Oyna</button>
+                            </div>
+                            <div class="game_box">
+                                <img src="./Images/biyikLogo.png" alt="foto">
+                                <button class="btn_play">Oyna</button>
+                            </div>
+                            <div class="game_box">
+                                <img src="./Images/biyikLogo.png" alt="foto">
+                                <button class="btn_play">Oyna</button>
+                            </div>
+                            <div class="game_box">
+                                <img src="./Images/biyikLogo.png" alt="foto">
+                                <button class="btn_play">Oyna</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div id="carouselExampleIndicators" class="carousel slide col-lg-12 col-12">
+                            <!-- -----asagda noqta gibi haraket etmesi icin olan buttonlarimiz---- -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                                    aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                                    aria-label="Slide 7"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                                    aria-label="Slide 8"></button>
+                            </div>
+                            <!-- ------icinde haraketde olan alanimiz----- -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="perfect_players">
+
+                                        <h1>En iyi oyuncular</h1>
+                                        <p>Sitemizin en iyi okey oyuncularini asagda gorebilirsiniz</p>
+                                        <div class="players_profil">
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="perfect_players">
+
+                                        <h1>En iyi oyuncular</h1>
+                                        <p>Sitemizin en iyi okey oyuncularini asagda gorebilirsiniz</p>
+                                        <div class="players_profil">
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="perfect_players">
+                                        <h1>En iyi oyuncular</h1>
+                                        <p>Sitemizin en iyi okey oyuncularini asagda gorebilirsiniz</p>
+                                        <div class="players_profil">
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="perfect_players">
+                                        <h1>En iyi oyuncular</h1>
+                                        <p>Sitemizin en iyi okey oyuncularini asagda gorebilirsiniz</p>
+                                        <div class="players_profil">
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="perfect_players">
+                                        <h1>En iyi oyuncular</h1>
+                                        <p>Sitemizin en iyi okey oyuncularini asagda gorebilirsiniz</p>
+                                        <div class="players_profil">
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="perfect_players">
+                                        <h1>En iyi oyuncular</h1>
+                                        <p>Sitemizin en iyi okey oyuncularini asagda gorebilirsiniz</p>
+                                        <div class="players_profil">
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="perfect_players">
+                                        <h1>En iyi oyuncular</h1>
+                                        <p>Sitemizin en iyi okey oyuncularini asagda gorebilirsiniz</p>
+                                        <div class="players_profil">
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="perfect_players">
+                                        <h1>En iyi oyuncular</h1>
+                                        <p>Sitemizin en iyi okey oyuncularini asagda gorebilirsiniz</p>
+                                        <div class="players_profil">
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                            <div class="profil_image">
+                                                <div class="puan">
+                                                    <span>58874 puan</span>
+                                                </div>
+                                                <span class="name">Bayram</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ------geri qayitmaq icin tiklanan buttonumuz----- -->
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <!-- ------ireli gitmek icin tiklanan buttonumuz----- -->
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+ <div class="row">
+                        <div class="text_body_message col-lg-12 col-12">
+                            <p>Kolayca okey ve çanak oyununu bilgisayar ve tüm cihazlarda oyna! Özel hesap açmadan,
+                                hizlica
+                                Okey
+                                Oyna! Sohbet et, hediyeler kazan ve arkadaşlarinla oyun oynamanin keyfini yaşa!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mobile-links-desktop col-lg-12 col-12">
+                            <a>
+                                <svg width="50" height="58" viewBox="0 0 50 58" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M41.6596 55.673C38.4289 58.7337 34.9015 58.2504 31.506 56.8006C27.9127 55.3186 24.6161 55.2541 20.825 56.8006C16.0778 58.7981 13.5724 58.2182 10.7373 55.673C-5.35015 39.4672 -2.97658 14.7881 15.2867 13.886C19.7371 14.1116 22.8359 16.2702 25.4402 16.4635C29.3302 15.6902 33.0554 13.4672 37.2091 13.7572C42.187 14.1438 45.9452 16.0769 48.4176 19.5564C38.1322 25.5812 40.5717 38.8229 50 42.528C48.1209 47.3607 45.6814 52.1612 41.6266 55.7052L41.6596 55.673ZM25.1106 13.6927C24.6161 6.50807 30.5829 0.579927 37.4399 0C38.3959 8.31228 29.7258 14.4982 25.1106 13.6927Z"
+                                        fill="white"></path>
+                                </svg>
+                                <div class="mobile-link-text">
+                                    <span class="mobile-link-text__top">App Store</span>
+                                    <span class="mobile-link-text__bottom">üzerinden indir</span>
+                                </div>
+                            </a>
+                            <a>
+                                <svg width="52" height="56" viewBox="0 0 52 56" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M38.3485 36.6463C44.9223 33.0186 49.9428 30.2477 50.3995 29.9953C51.7618 29.2435 53.189 27.325 50.3995 25.7915C49.5029 25.2976 44.6174 22.6117 38.3408 19.1592L29.7081 27.9298L38.3485 36.6463Z"
+                                        fill="#FFE300"></path>
+                                    <path
+                                        d="M29.7081 27.9298L2.0968 55.9809C2.72034 56.0607 3.47029 55.8942 4.33292 55.4181C6.1188 54.4326 25.2978 43.8487 38.3485 36.6463L29.7081 27.9298Z"
+                                        fill="#FF4E54"></path>
+                                    <path
+                                        d="M29.7081 27.9298L38.3408 19.1592C38.3408 19.1592 6.25382 1.50898 4.33291 0.452372C3.59456 0.0461178 2.78956 -0.0956593 2.07701 0.0643277L29.7081 27.9298Z"
+                                        fill="#00F085"></path>
+                                    <path
+                                        d="M29.7081 27.9298L2.07701 0.0643277C0.935733 0.321001 0 1.31735 0 3.31913V52.6376C0 54.5228 0.736212 55.8486 2.0968 55.9809L29.7081 27.9298Z"
+                                        fill="#00E0FF"></path>
+                                </svg>
+                                <div class="mobile-link-text">
+                                    <span class="mobile-link-text__top">Play Store</span>
+                                    <span class="mobile-link-text__bottom">üzerinden indir</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                   
+
+                    <div class="row">
+                        <div class="bottom_jpg col-lg-12 col-12">
+                            <img src="./Images/altFoto.png" alt="foto">
+                        </div>
+                    </div>
+
                 </div>
+                <!-- --------------- -->
             </div>
-
-           
-
         </div>
 
-        <div class="right_box">
-            
-        
-            <div class="buttons_top">
-                <div class="button_left_top">
-                    <button class="btnn">Masaustune indir</button>
-                    <button class="btnn">Galeri</button>
-                </div>
-                <div class="button_right_top">
-                    <button class="btnn">Blog</button>
-                    <button class="btnn">Iletesim</button>
-                </div>
-            </div>
 
-            <div class="games_play">
 
-                <div class="game_box">
-                    <img src="./Images/biyikLogo.png" alt="foto">
-                    <button class="btn_play">Oyna</button>
-                </div>
-                <div class="game_box">
-                    <img src="./Images/biyikLogo.png" alt="foto">
-                    <button class="btn_play">Oyna</button>
-                </div>
-                <div class="game_box">
-                    <img src="./Images/biyikLogo.png" alt="foto">
-                    <button class="btn_play">Oyna</button>
-                </div>
-                <div class="game_box">
-                    <img src="./Images/biyikLogo.png" alt="foto">
-                    <button class="btn_play">Oyna</button>
-                </div>
 
-            </div>
-
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <!-- -----asagda noqta gibi haraket etmesi icin olan buttonlarimiz---- -->
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                </div>
-                <!-- ------icinde haraketde olan alanimiz----- -->
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="perfect_players">
-
-                        <h1>En iyi oyuncular</h1>
-                        <p>Sitemizin en iyi okey oyuncularini asagda gorebilirsiniz</p>
-                        <div class="players_profil">
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="perfect_players">
-
-                        <h1>En iyi oyuncular</h1>
-                        <p>Sitemizin en iyi okey oyuncularini asagda gorebilirsiniz</p>
-                        <div class="players_profil">
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="perfect_players">
-                        <h1>En iyi oyuncular</h1>
-                        <p>Sitemizin en iyi okey oyuncularini asagda gorebilirsiniz</p>
-                        <div class="players_profil">
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="perfect_players">
-                        <h1>En iyi oyuncular</h1>
-                        <p>Sitemizin en iyi okey oyuncularini asagda gorebilirsiniz</p>
-                        <div class="players_profil">
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="perfect_players">
-                        <h1>En iyi oyuncular</h1>
-                        <p>Sitemizin en iyi okey oyuncularini asagda gorebilirsiniz</p>
-                        <div class="players_profil">
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="perfect_players">
-                        <h1>En iyi oyuncular</h1>
-                        <p>Sitemizin en iyi okey oyuncularini asagda gorebilirsiniz</p>
-                        <div class="players_profil">
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="perfect_players">
-                        <h1>En iyi oyuncular</h1>
-                        <p>Sitemizin en iyi okey oyuncularini asagda gorebilirsiniz</p>
-                        <div class="players_profil">
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="perfect_players">
-                        <h1>En iyi oyuncular</h1>
-                        <p>Sitemizin en iyi okey oyuncularini asagda gorebilirsiniz</p>
-                        <div class="players_profil">
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                            <div class="profil_image">
-                                <div class="puan">
-                                    <span>58874 puan</span>
-                                </div>
-                                <span class="name">Bayram</span>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- ------geri qayitmaq icin tiklanan buttonumuz----- -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <!-- ------ireli gitmek icin tiklanan buttonumuz----- -->
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-
-            <div class="mobile-links-desktop">
-                <a>
-                    <svg width="50" height="58" viewBox="0 0 50 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M41.6596 55.673C38.4289 58.7337 34.9015 58.2504 31.506 56.8006C27.9127 55.3186 24.6161 55.2541 20.825 56.8006C16.0778 58.7981 13.5724 58.2182 10.7373 55.673C-5.35015 39.4672 -2.97658 14.7881 15.2867 13.886C19.7371 14.1116 22.8359 16.2702 25.4402 16.4635C29.3302 15.6902 33.0554 13.4672 37.2091 13.7572C42.187 14.1438 45.9452 16.0769 48.4176 19.5564C38.1322 25.5812 40.5717 38.8229 50 42.528C48.1209 47.3607 45.6814 52.1612 41.6266 55.7052L41.6596 55.673ZM25.1106 13.6927C24.6161 6.50807 30.5829 0.579927 37.4399 0C38.3959 8.31228 29.7258 14.4982 25.1106 13.6927Z" fill="white"></path>
-                    </svg>
-                    <div class="mobile-link-text">
-                        <span class="mobile-link-text__top">App Store</span>
-                        <span class="mobile-link-text__bottom">üzerinden indir</span>
-                    </div>
-                </a>
-                <a>
-                    <svg width="52" height="56" viewBox="0 0 52 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M38.3485 36.6463C44.9223 33.0186 49.9428 30.2477 50.3995 29.9953C51.7618 29.2435 53.189 27.325 50.3995 25.7915C49.5029 25.2976 44.6174 22.6117 38.3408 19.1592L29.7081 27.9298L38.3485 36.6463Z" fill="#FFE300"></path>
-                        <path d="M29.7081 27.9298L2.0968 55.9809C2.72034 56.0607 3.47029 55.8942 4.33292 55.4181C6.1188 54.4326 25.2978 43.8487 38.3485 36.6463L29.7081 27.9298Z" fill="#FF4E54"></path>
-                        <path d="M29.7081 27.9298L38.3408 19.1592C38.3408 19.1592 6.25382 1.50898 4.33291 0.452372C3.59456 0.0461178 2.78956 -0.0956593 2.07701 0.0643277L29.7081 27.9298Z" fill="#00F085"></path>
-                        <path d="M29.7081 27.9298L2.07701 0.0643277C0.935733 0.321001 0 1.31735 0 3.31913V52.6376C0 54.5228 0.736212 55.8486 2.0968 55.9809L29.7081 27.9298Z" fill="#00E0FF"></path>
-                    </svg>
-                    <div class="mobile-link-text">
-                        <span class="mobile-link-text__top">Play Store</span>
-                        <span class="mobile-link-text__bottom">üzerinden indir</span>
-                    </div>
-                </a>
-            </div>
-
-            <div class="text_body_message">
-                <p>Kolayca okey ve çanak oyununu bilgisayar ve tüm cihazlarda oyna! Özel hesap açmadan, hizlica Okey Oyna! Sohbet et, hediyeler kazan ve arkadaşlarinla oyun oynamanin keyfini yaşa!</p>
-            </div>
-
-            <div class="bottom_jpg">
-                <img src="./Images/altFoto.png" alt="foto">
-            </div>
-        </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+        integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+        crossorigin="anonymous"></script>
 </body>
-</html> 
+
+</html>
